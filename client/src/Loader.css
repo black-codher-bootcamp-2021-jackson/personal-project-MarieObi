@@ -1,0 +1,111 @@
+@keyframes dance {
+  from {
+    height: 10px;
+  }
+  to {
+    height: 100%;
+  }  
+}
+
+/* StyledLoader class for div element */
+/* Loader to be displayed during the time it takes for our app to retrieve data from the Spotify API,
+ do whatever operations it needs on that data, and render it. */
+.StyledLoader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 50vh;
+}
+
+.bars {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    width: 100px;
+    min-width: 100px;
+    height: 50px;
+    margin: 0 auto;
+    z-index: 2;
+    position: relative;
+    left: 0;
+    right: 0;
+}
+
+.StyledBar1 {
+  width: 10px;
+  height: 5px;
+  margin: 0 2px;
+  background-color: var(--dark-grey);
+  animation-name: dance;
+  animation-duration: 400ms;
+  animation-play-state: running;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 250ms
+  /* animation-delay: ${props => props.delay || '0ms'}; */
+}
+
+.StyledBar2 {
+    width: 10px;
+    height: 5px;
+    margin: 0 2px;
+    background-color: var(--dark-grey);
+    animation-name: dance;
+    animation-duration: 400ms;
+    animation-play-state: running;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 715ms
+    /* animation-delay: ${props => props.delay || '0ms'}; */
+}
+
+.StyledBar3 {
+    width: 10px;
+    height: 5px;
+    margin: 0 2px;
+    background-color: var(--dark-grey);
+    animation-name: dance;
+    animation-duration: 400ms;
+    animation-play-state: running;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 475ms
+    /* animation-delay: ${props => props.delay || '0ms'}; */
+}
+
+.StyledBar4 {
+    width: 10px;
+    height: 5px;
+    margin: 0 2px;
+    background-color: var(--dark-grey);
+    animation-name: dance;
+    animation-duration: 400ms;
+    animation-play-state: running;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 25ms
+    /* animation-delay: ${props => props.delay || '0ms'}; */
+}
+
+.StyledBar5 {
+    width: 10px;
+    height: 5px;
+    margin: 0 2px;
+    background-color: var(--dark-grey);
+    animation-name: dance;
+    animation-duration: 400ms;
+    animation-play-state: running;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 190ms
+    /* animation-delay: ${props => props.delay || '0ms'}; */
+}
+
+

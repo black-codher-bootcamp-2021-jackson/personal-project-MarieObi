@@ -1,10 +1,12 @@
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
-const profileSchema = new Schema({
-  first_name: String,
-  last_name: String,
-  location: String,
+const userProfileSchema = new Schema({
+  country: String,
+  display_name: String,
+  followers: {
+    total: Number
+  },
 });
 
-mongoose.model("profiles", profileSchema);
+mongoose.model("profiles", userProfileSchema);
